@@ -18,8 +18,8 @@ This project is a sample React application designed to help you practice and dem
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/react-debug-sample.git
-   cd react-debug-sample
+   git clone https://github.com/lizjob/checkpoint-debugging-react.git
+   cd checkpoint-debugging-react
 Install dependencies:
 
 bash
@@ -52,16 +52,6 @@ Include a screenshot of your React Developer Tools panel showing the fixed compo
 ✅ Outcome
 All bugs were successfully identified and resolved. The application functions as expected with accurate state and prop flows.
 
-📁 Folder Structure
-css
-Copy
-Edit
-src/
-│
-├── App.js
-├── Parent.js
-├── Child.js
-└── index.js
 📎 Resources
 React Developer Tools
 
