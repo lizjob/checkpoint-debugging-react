@@ -1,0 +1,62 @@
+React Debugging Documentation
+ Project Setup Summary
+Project: react-debug-sample
+
+Stack: React (with state, props, and component tree)
+
+Structure:
+
+App.js: Top-level component with input
+
+Parent.js: Receives a prop and passes it to Child
+
+Child.js: Displays the prop value
+
+ Debugging Process Using React Developer Tools
+ Step 1: Install and Open React Developer Tools
+Installed React Developer Tools extension in Chrome.
+
+Opened the Components tab in DevTools after launching the app.
+
+ Step 2: Inspect Components Tree
+Observed the component tree: App > Parent > Child.
+
+🛠 Step 3: Identify Issues
+ Bug 1: Missing Prop
+Observed: Parent component is not receiving any message prop.
+
+Cause: In App.js, the prop passed is msg, but Parent.js expects message.
+
+ Fix 1: Rename the prop key
+Before (in App.js):
+
+jsx
+Copy
+Edit
+<Parent msg={text} />
+After:
+
+jsx
+Copy
+Edit
+<Parent message={text} />
+ Step 4: Confirm Fix
+Reloaded app.
+
+React Dev Tools shows Parent receiving message as prop.
+
+Child correctly displays updated message value.
+
+ Step 5: Test Dynamic Behavior
+Changed the input value in App.js.
+
+Verified real-time updates reflected in Child.
+
+Confirmed state and props are flowing correctly.
+
+ Final Result
+All components render expected values.
+
+Props are passed correctly.
+
+No console warnings or unexpected behavior.
